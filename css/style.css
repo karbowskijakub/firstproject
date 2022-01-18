@@ -1,0 +1,81 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.nav__brand, .nav__brand--color, .nav__color {
+  color: green;
+}
+
+.nav__brand {
+  font-size: 4rem;
+  margin-left: 10em;
+}
+
+.nav__brand, .nav__brand--color {
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  padding: 1em 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav__items .nav__item {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__items, .nav__item, .nav__link {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 1em 2em;
+  display: block;
+  font-size: 3rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.nav__items, .nav__item, .nav__link:hover {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

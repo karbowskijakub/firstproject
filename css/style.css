@@ -39,20 +39,20 @@ body {
   color: white;
 }
 
-.nav__brand, .nav__brand--color, .nav__color {
+.nav__brand, .nav__color {
+  font-size: 5rem;
   color: green;
 }
 
-.nav__brand {
-  font-size: 4rem;
-  margin-left: 10em;
+.nav__colorsecond {
+  font-size: 5rem;
 }
 
-.nav__brand, .nav__brand--color {
+.nav__brand {
   text-decoration: none;
   color: white;
   font-style: bold;
-  padding: 1em 2em;
+  padding: 0 2em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -77,5 +77,154 @@ body {
 
 .nav__items, .nav__item, .nav__link:hover {
   color: green;
+}
+
+.nav__button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
+  padding: 0.55em 1em;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    height: 4em;
+  }
+  .nav__button {
+    top: 0;
+  }
+  .nav__colorsecond {
+    font-size: 2rem;
+  }
+  .nav__brand,
+  .nav__color {
+    font-size: 2rem;
+  }
+  .nav__brand {
+    font-size: 3.6rem;
+    margin: 2em 0;
+    margin-left: 1em;
+    left: 0;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav__link {
+    font-size: 1.8rem;
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav {
+    height: 4em;
+  }
+  .nav__button {
+    top: 0.9em;
+  }
+  .nav__colorsecond {
+    font-size: 3rem;
+  }
+  .nav,
+  .nav__brand,
+  .nav__color {
+    font-size: 3rem;
+  }
+  .nav__brand {
+    font-size: 3.6rem;
+    margin: 2em 0;
+    margin-left: 1em;
+    left: 0;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav__link {
+    font-size: 1.8rem;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    height: 4em;
+  }
+  .nav__button {
+    top: 0.2em;
+    font-size: 1.5em;
+  }
+  .nav__colorsecond {
+    font-size: 4rem;
+  }
+  .nav,
+  .nav__brand,
+  .nav__color {
+    font-size: 4rem;
+  }
+  .nav__brand {
+    font-size: 3.6rem;
+    margin: 2em 0;
+    margin-left: 1em;
+    left: 0;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav__link {
+    font-size: 1.8rem;
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav__button {
+    display: none;
+  }
+  .nav__brand {
+    margin-left: 1em;
+    left: 0;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav__link {
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__button {
+    display: none;
+  }
+  .nav__brand {
+    margin-left: 1em;
+    left: 0;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav__link {
+    font-weight: bold;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav__link {
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

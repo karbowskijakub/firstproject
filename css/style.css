@@ -4,6 +4,40 @@
   max-width: 1200px;
 }
 
+.btn-special-animation {
+  position: relative;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-special-animation::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  z-index: -10;
+}
+
+.btn-special-animation:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 *,
 *::before,
 *::after {
@@ -18,12 +52,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.shadow-bg {
+  background-color: #333;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
 
 .nav {
+  z-index: 1000;
   position: fixed;
   width: 100%;
   display: -webkit-box;
@@ -35,13 +76,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #333;
   color: white;
 }
 
 .nav__brand, .nav__color {
   font-size: 5rem;
-  color: green;
+  color: yellow;
 }
 
 .nav__colorsecond {
@@ -50,7 +90,7 @@ body {
 
 .nav__brand {
   text-decoration: none;
-  color: white;
+  color: #eee;
   font-style: bold;
   padding: 0 2em;
   font-family: 'Montserrat', sans-serif;
@@ -67,7 +107,7 @@ body {
 .nav__items, .nav__item, .nav__link {
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: #eee;
   padding: 1em 2em;
   display: block;
   font-size: 3rem;
@@ -76,10 +116,11 @@ body {
 }
 
 .nav__items, .nav__item, .nav__link:hover {
-  color: green;
+  color: yellow;
 }
 
 .nav__button {
+  color: #eee;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +134,59 @@ body {
   cursor: pointer;
 }
 
+.header {
+  background-image: url(../img/work-small.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  height: 75vh;
+  z-index: 0;
+}
+
+.header__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
+.header__heading {
+  text-transform: uppercase;
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__btn {
+  background: #eee;
+  text-decoration: none;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__btn::before {
+  background-color: yellow;
+}
+
 @media (max-width: 576px) {
   .nav {
     height: 4em;
@@ -101,11 +195,11 @@ body {
     top: 0;
   }
   .nav__colorsecond {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .nav__brand,
   .nav__color {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .nav__brand {
     font-size: 3.6rem;
@@ -178,6 +272,9 @@ body {
     font-size: 1.8rem;
     display: none;
   }
+  .header__btn {
+    padding: 1.4em 2.2em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -192,10 +289,13 @@ body {
   }
   .nav__link {
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header__heading {
+    font-size: 3.8rem;
   }
 }
 
@@ -216,6 +316,9 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .header {
+    background-image: url("../img/work-big.jpg");
+  }
 }
 
 @media (min-width: 1400px) {
@@ -225,6 +328,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header__heading {
+    font-size: 5rem;
+  }
+  .header__btn {
+    padding: 2em 4em;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -154,6 +154,21 @@ body {
 		font-size: 1.8rem;
 		display: none;
 	}
+	.white-block{
+		position: absolute;
+		height: 40px;
+		width: 90%;
+		background-color: white;
+	
+		&-left{
+			bottom: 0;
+			left: -50px;
+			transform: skew(60deg);
+		}
+	
+	}
+
+
 }
 
 @media (min-width: 576px) {
@@ -185,6 +200,19 @@ body {
 	.nav__link {
 		font-size: 1.8rem;
 		display: none;
+	}
+	.white-block{
+		position: absolute;
+		height: 60px;
+		width: 90%;
+		background-color: white;
+	
+		&-left{
+			bottom: 0;
+			left: -50px;
+			transform: skew(60deg);
+		}
+	
 	}
 }
 @media (min-width: 768px) {
@@ -225,6 +253,19 @@ body {
 		}
 		
 	}
+	.white-block{
+		position: absolute;
+		height: 60px;
+		width: 90%;
+		background-color: white;
+	
+		&-left{
+			bottom: 0;
+			left: -50px;
+			transform: skew(60deg);
+		}
+	
+	}
 }
 
 @media (min-width: 992px) {
@@ -248,6 +289,19 @@ body {
 		&__heading{
 font-size: 3.8rem;
 		}}
+		.white-block{
+			position: absolute;
+			height: 60px;
+			width: 90%;
+			background-color: white;
+		
+			&-left{
+				bottom: 0;
+				left: -50px;
+				transform: skew(60deg);
+			}
+		
+		}
 }
 
 @media (min-width:1200px) {
@@ -283,5 +337,18 @@ font-size: 3.8rem;
 			&__btn{
 				padding: 2em 4em;
 			}
+		}
+		.white-block{
+			position: absolute;
+			height: 60px;
+			width: 80%;
+			background-color: white;
+		
+			&-left{
+				bottom: 0;
+				left: -50px;
+				transform: skew(60deg);
+			}
+		
 		}
 }

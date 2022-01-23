@@ -11,3 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('scroll', addShadow)
 })
+
+
+
+const nav = document.querySelector('.nav');
+const navBtn = document.querySelector('.nav__button');
+
+const handleNav = () => {
+	nav.classList.toggle('nav--active')}
+
+	navBtn.addEventListener('click',handleNav)

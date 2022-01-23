@@ -67,9 +67,18 @@ html {
 }
 
 .shadow-bg {
+  width: 100%;
   background-color: #333;
-  -webkit-transition: background-color .5s;
-  transition: background-color .5s;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.shadow-bg .nav__items, .shadow-bg .nav__item {
+  left: 0;
+  z-index: -10;
+  background-color: #333;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 body {
@@ -119,11 +128,11 @@ body {
 }
 
 .nav__items, .nav__item, .nav__link {
+  display: none;
   list-style: none;
   text-decoration: none;
   color: #eee;
   padding: 1em 2em;
-  display: block;
   font-size: 3rem;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -202,6 +211,39 @@ body {
 }
 
 @media (max-width: 576px) {
+  .nav--active .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 5em;
+    position: fixed;
+    color: white;
+  }
+  .nav--active .nav__items, .nav--active .nav__item, .nav--active .nav__link {
+    margin-top: -0.5em;
+    display: block;
+    font-size: 1.8rem;
+  }
+  .nav--active .nav__items {
+    width: 100%;
+  }
+  .nav--active .nav__items, .nav--active .nav__item {
+    top: 2em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav--active .nav__items, .nav--active .nav__item, .nav--active .nav__link {
+    padding: 0.5em 1em;
+  }
   .nav {
     height: 4em;
   }
@@ -225,7 +267,6 @@ body {
   }
   .nav__link {
     font-size: 1.8rem;
-    display: none;
   }
   .white-block {
     position: absolute;
@@ -242,8 +283,38 @@ body {
 }
 
 @media (min-width: 576px) {
-  .nav {
+  .nav--active .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 4em;
+    position: fixed;
+    color: white;
+  }
+  .nav--active .nav__items, .nav--active .nav__item, .nav--active .nav__link {
+    margin-top: 1em;
+    display: block;
+    font-size: 1.8rem;
+  }
+  .nav--active .nav__items {
+    width: 100%;
+  }
+  .nav--active .nav__items, .nav--active .nav__item {
+    top: 2em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav--active .nav__items, .nav--active .nav__item, .nav--active .nav__link {
+    padding: 0.5em 1em;
   }
   .nav__button {
     top: 0.9em;
@@ -266,7 +337,6 @@ body {
   }
   .nav__link {
     font-size: 1.8rem;
-    display: none;
   }
   .white-block {
     position: absolute;
@@ -328,6 +398,69 @@ body {
 }
 
 @media (min-width: 992px) {
+  .nav {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .nav__brand, .nav__color {
+    font-size: 4rem;
+    color: yellow;
+  }
+  .nav__colorsecond {
+    font-size: 4rem;
+  }
+  .nav__brand {
+    text-decoration: none;
+    color: #eee;
+    font-style: bold;
+    padding: 0 2em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .nav__items .nav__item {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__items, .nav__item, .nav__link {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #eee;
+    padding: 1em 2em;
+    font-size: 3rem;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+  .nav__items, .nav__item, .nav__link:hover {
+    color: yellow;
+  }
+  .nav__button {
+    color: #eee;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 0.55em 1em;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
   .nav__button {
     display: none;
   }

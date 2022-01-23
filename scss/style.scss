@@ -13,9 +13,17 @@ html {
 	scroll-behavior: smooth;
 }
 .shadow-bg{
-	background-color: #333;
-	transition: background-color .5s;
-	
+	width: 100%;
+	background-color:#333;
+	transition: background-color .3s;
+	.nav__items,.nav__item {
+		left:0;
+		z-index:-10;
+		background-color: #333;
+		transition: background-color .3s;
+}
+
+
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -54,11 +62,11 @@ body {
 	&__items,
 	&__item,
 	&__link {
+		display: none;
 		list-style: none;
 		text-decoration: none;
 		color: $light-white;
 		padding: 1em 2em;
-		display: block;
 		font-size: 3rem;
 		transition: color 0.3s;
 	}
@@ -126,6 +134,48 @@ body {
 
 ///media
 @media (max-width: 576px) {
+	.nav--active{
+		.nav {
+			
+				flex-direction: column;
+				align-items: flex-start;
+				height: 5em;
+				position: fixed;
+	color: white;
+	&__items,
+	&__item,
+	&__link {
+		
+		margin-top:-0.5em;
+		display:block;
+		font-size: 1.8rem;
+
+	
+	}
+
+
+
+				&__items {
+					
+					width: 100%;
+					
+				}
+		
+				&__items ,&__item {
+					top:2em;
+					position: absolute;
+					text-align: center;
+					width: 100%;
+					flex-direction: column;
+					
+				}
+		
+				&__items,&__item ,&__link{
+		padding:0.5em 1em;
+		
+				}
+			}
+		}
 	.nav {
 		height: 4em;
 	}
@@ -152,7 +202,7 @@ body {
 	}
 	.nav__link {
 		font-size: 1.8rem;
-		display: none;
+		
 	}
 	.white-block{
 		position: absolute;
@@ -172,9 +222,48 @@ body {
 }
 
 @media (min-width: 576px) {
-	.nav {
-		height: 4em;
+	.nav--active{
+		.nav {
+			
+				flex-direction: column;
+				align-items: flex-start;
+				height: 4em;
+				position: fixed;
+	color: white;
+	&__items,
+	&__item,
+	&__link {
+		
+		margin-top:1em;
+		display:block;
+		font-size: 1.8rem;
+
+	
 	}
+
+
+
+				&__items {
+					
+					width: 100%;
+					
+				}
+		
+				&__items ,&__item {
+					top:2em;
+					position: absolute;
+					text-align: center;
+					width: 100%;
+					flex-direction: column;
+					
+				}
+		
+				&__items,&__item ,&__link{
+		padding:0.5em 1em;
+		
+				}
+			}
+		}
 
 	.nav__button {
 		top: 0.9em;
@@ -198,8 +287,9 @@ body {
 		padding: 0;
 	}
 	.nav__link {
+		
 		font-size: 1.8rem;
-		display: none;
+	
 	}
 	.white-block{
 		position: absolute;
@@ -269,7 +359,67 @@ body {
 }
 
 @media (min-width: 992px) {
-
+	.nav {
+		z-index:1000;
+		position: fixed;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		&__brand,
+		&__color {
+			font-size: 4rem;
+			color: $yellow-color;
+		}
+		&__colorsecond {
+			font-size: 4rem;
+		}
+		&__brand {
+			text-decoration: none;
+			color: $light-white;
+			font-style: bold;
+			padding: 0 2em;
+			font-family: 'Montserrat', sans-serif;
+		}
+	
+		&__items &__item {
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		&__items,
+		&__item,
+		&__link {
+			display: block;
+			list-style: none;
+			text-decoration: none;
+			color: $light-white;
+			padding: 1em 2em;
+			font-size: 3rem;
+			transition: color 0.3s;
+		}
+		&__items,
+		&__item,
+		&__link:hover {
+			color: $yellow-color;
+		}
+	
+		//button
+		&__button {
+			color:$light-white;
+			position: absolute;
+			display: flex;
+			top: 0;
+			right: 0;
+			padding: 0.55em 1em;
+	
+			font-size: 3rem;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+	}
 	.nav__button {
 		display: none;
 	

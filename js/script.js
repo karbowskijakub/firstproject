@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const nav = document.querySelector('.nav');
 const navBtn = document.querySelector('.nav__button');
+const footerYear = document.querySelector('.footer__year');
+
+
+const handleCurrentYear = () =>{
+	const year = (new Date).getFullYear();
+	footerYear.innerText = year;
+}
+handleCurrentYear();
 
 const handleNav = () => {
 	nav.classList.toggle('nav--active')}

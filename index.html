@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e4fb5d2b95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Vertical Garden</title>
 </head>
@@ -23,7 +24,7 @@
     <nav class="nav">
 
 
-        <a class="nav__brand" href="#about-us"><span class="nav__color"><i
+        <a class="nav__brand" href="#about-us"><span  class="nav__color"><i
                     class="fas fa-dumbbell"></i>Trainer</span><span class="nav__colorsecond">Support</span></a>
         <button class="nav__button"><i class="fas fa-bars"></i></button>
         <div class="nav__items">
@@ -37,7 +38,7 @@
         </div>
 
     </nav>
-    <header class="header section">
+    <header id="about-us" class="header section">
         <div class="header__shadow"></div>
         <h1 class="header__heading">Trenuj z profesjonalną opieką</h1>
 
@@ -46,103 +47,223 @@
         <div class="white-block white-block-left"></div>
     </header>
     <main class="main">
-        <section class="dreams section-padding section white-section">
+        <section id="portfolio" class="dreams section-padding section white-section">
             <div class="wrapper">
                 <h2 class="section-heading">Nasi podopieczni</h2>
-                <div class="dreams_box">
-                    <div class="class__box-img">
-                        <img src="./img/hero-mini.jpg" alt="dreams__img">
+                <div class="dreams__box">
+                    <div class="dreams__box-img">
+                        <img src="./img/hero-mini2.jpg" class="dreams__img">
                     </div>
                     <div class="dreams__box-text">
-                        <h3 class=dreams__title></h3>
-                        <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae accusamus vel nobis vitae cupiditate saepe optio est.</p>
+                        <h3 class=dreams__title>Rafał</h3>
+                        <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum
+                            voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae
+                            accusamus vel nobis vitae cupiditate saepe optio est.</p>
                     </div>
                 </div>
-                    <div class="dreams_box">
-                        <div class="class__box-img  dreams__box-img--right">
-                            <img src="./img/hero-mini.jpg" alt="dreams__img">
-                        </div>
-                        <div class="dreams__box-text dreams__box-text--right">
-                            <h3 class=dreams__title></h3>
-                            <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae accusamus vel nobis vitae cupiditate saepe optio est.</p>
-                        </div>
+                <div class="dreams__box">
+                    <div class="dreams__box-img  dreams__box-img--right">
+                        <img src="./img/hero-mini.jpg" class="dreams__img">
+                    </div>
+                    <div class="dreams__box-text dreams__box-text--right">
+                        <h3 class=dreams__title>Williams</h3>
+                        <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum
+                            voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae
+                            accusamus vel nobis vitae cupiditate saepe optio est.</p>
+                    </div>
                 </div>
-                <div class="dreams_box">
-                    <div class="class__box-img">
-                        <img src="./img/hero-mini.jpg" alt="dreams__img">
+                <div class="dreams__box">
+                    <div class="dreams__box-img">
+                        <img src="./img/hero-mini4.jpg" class="dreams__img">
                     </div>
                     <div class="dreams__box-text">
-                        <h3 class=dreams__title></h3>
-                        <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae accusamus vel nobis vitae cupiditate saepe optio est.</p>
+                        <h3 class=dreams__title>Martyna</h3>
+                        <p class="dreams__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos eum
+                            voluptatem nesciunt illum provident dolor ea, reprehenderit quos aut adipisci molestiae
+                            accusamus vel nobis vitae cupiditate saepe optio est.</p>
                     </div>
-            </div>
+                </div>
 
 
             </div>
 
         </section>
-    </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <section id="services" class="offers section-padding section white-section" id="offers">
+            <div class="wrapper">
+                <h2 class="section-heading">Nasze oferty</h2>
+                <div class="offers__cards">
+                    <div class="offers__card" onclick="void(0)">
+                        <div class="offers__card-img offers__card-img--first">
+                            <h3 class="offers__card-img-title">Pakiet 1</h3>
+                            <p class="offers__card-img-info">
+                                <i class="fas fa-angle-double-right"></i>Więcej informacji
+                            </p>
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__card-info-title"> Pakiet 1</h3>
+                            <ul class="offers__card-info-list">
+                                <li class="offers__card-info-list-item">300$</li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
 
+                            </ul>
+                            <button class="offers__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                    <div class="offers__card" onclick="void(0)">
+                        <div class="offers__card-img offers__card-img--second">
+                            <h3 class="offers__card-img-title">Pakiet 2</h3>
+                            <p class="offers__card-img-info">
+                                <i class="fas fa-angle-double-right"></i>Więcej informacji
+                            </p>
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__card-info-title"> Pakiet 2</h3>
+                            <ul class="offers__card-info-list">
+                                <li class="offers__card-info-list-item">600$</li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+
+                            </ul>
+                            <button class="offers__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                    <div class="offers__card" onclick="void(0)">
+                        <div class="offers__card-img offers__card-img--third">
+                            <h3 class="offers__card-img-title">Pakiet 3</h3>
+                            <p class="offers__card-img-info">
+                                <i class="fas fa-angle-double-right"></i>Więcej informacji
+                            </p>
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__card-info-title"> Pakiet 3</h3>
+                            <ul class="offers__card-info-list">
+                                <li class="offers__card-info-list-item">900$</li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+                                <li class="offers__card-info-list-item"></li>
+
+                            </ul>
+                            <button class="offers__card-info-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="reviews__boxes">
+                <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="img/woman1.jpg" alt="Ewelina Małys">
+                    </div>
+                    <div class="reviews__box-info">
+                        <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam quas accusantium
+                            similique rem! Tenetur dolores provident saepe quam laborum!
+                        </p>
+                        <strong>Ewelina Małys</strong>
+                    </div>
+                </div>
+                <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="img/woman2.jpg" alt="Aleksandra Grabowska">
+                    </div>
+                    <div class="reviews__box-info">
+                        <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam quas accusantium
+                            similique rem! Tenetur dolores provident saepe quam laborum!
+                        </p>
+                        <strong>Aleksandra Grabowska</strong>
+                    </div>
+                </div>
+                <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="img/woman3.jpg" alt="Amelia Stan">
+                    </div>
+                    <div class="reviews__box-info">
+                        <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam quas accusantium
+                            similique rem! Tenetur dolores provident saepe quam laborum!
+                        </p>
+                        <strong>Amelia Stan</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section-padding section white-section">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+
+            <h2 class="section-heading">Kontakt</h2>
+            <div class="wrapper">
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" id="email" class="contact__form-input">
+                    </div>
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="wrapper">
+
+                <div class="footer__boxes">
+                    <div class="footer__box">
+                        <h3 class="footer__box-title"><i class="fas fa-kiwi-bird"></i>TP Co.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae voluptatum nisi optio
+                            omnis veniam, eos non magni distinctio blanditiis.</p>
+                        <div class="footer__box-social">
+                            <a href="#" class="footer__box-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__box footer__box-desktop">
+                        <h3 class="footer__box-title">Pakiety</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#">Pakiet 1</a></li>
+                            <li class="footer__box-list-item"><a href="#">Pakiet 2</a></li>
+                            <li class="footer__box-list-item"><a href="#">Pakiet 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__box footer__box-desktop">
+                        <h3 class="footer__box-title">O firmie</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#">O nas</a></li>
+                            <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                            <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                            <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <p class="footer__bottom-text">&copy; <span class="footer__year"></span>TrainerSupport</p>
+        </footer>
+
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
 
 </body>
 <script src="js/script.js" type="text/javascript"></script>

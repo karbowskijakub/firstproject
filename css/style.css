@@ -243,6 +243,7 @@ body {
 }
 
 .offers__card {
+  z-index: 100;
   position: relative;
   margin: 1em 0;
   height: 450px;

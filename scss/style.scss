@@ -179,13 +179,13 @@ body {
 			border-radius: 8px;
 			background-size: cover;
 			&--first {
-				background-image: url('/img/pierwszy.jpg');
+				background-image: url('../img/pierwszy.jpg');
 			}
 			&--second {
-				background-image: url('/img/drugi.jpg');
+				background-image: url('../img/drugi.jpg');
 			}
 			&--third {
-				background-image: url('/img/trzeci.jpg');
+				background-image: url('../img/trzeci.jpg');
 			}
 			&-title {
 				font-size: 2.8rem;

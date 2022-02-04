@@ -278,15 +278,15 @@ body {
 }
 
 .offers__card-img--first {
-  background-image: url("/img/pierwszy.jpg");
+  background-image: url("../img/pierwszy.jpg");
 }
 
 .offers__card-img--second {
-  background-image: url("/img/drugi.jpg");
+  background-image: url("../img/drugi.jpg");
 }
 
 .offers__card-img--third {
-  background-image: url("/img/trzeci.jpg");
+  background-image: url("../img/trzeci.jpg");
 }
 
 .offers__card-img-title {

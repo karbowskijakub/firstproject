@@ -1,3 +1,3 @@
 # First basic project 
 
-## Click on  [*the link*]() to view the project.
+## Click on  [*the link*](https://karbowskijakub.github.io/firstproject/) to view the project.
